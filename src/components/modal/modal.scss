@@ -1,0 +1,58 @@
+.modal{
+    width:50%;
+    height: 25%;
+    
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 0%;
+    align-self: center;
+    background-color: lightgrey;
+    margin-top: 20%;
+    margin-left:20% ;
+    margin-right: 20%;
+    background-color: lightgreen;
+}
+.congrats {
+    font-size: 24px;
+    font-weight: BOLD;
+}
+.play{
+    font-size: 18px;
+}
+.playButton{
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    border-radius: 50%;
+    border:1px solid black;
+}
+.loss{
+    @extend .congrats;
+
+}
+.modal2{
+    @extend .modal;
+    background-color: red;
+}
+@media screen and (max-width:490px){
+    .modal .congrats {
+        font-size: 12px;
+        font-weight: BOLD;
+    }
+    .modal .play{
+        font-size: 9px;
+    }
+    .modal2 .loss{
+        font-size: 12px;
+        font-weight: BOLD;
+
+    }
+    .modal2 .play{
+        font-size: 9px;
+    }
+
+}
