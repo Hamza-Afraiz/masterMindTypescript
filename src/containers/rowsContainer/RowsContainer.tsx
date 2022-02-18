@@ -43,7 +43,7 @@ function RowsContainer() {
   const [previousRow, setPreviousRow]= useState<previousInterfaces>([]); //maintaining the rows in which we have lost
   const [counterNext, setCounterNext] = useState(0); //to allow user to check and go on next row if user loose.
 
-  //handling the tick button to check what going to be next/
+  //handling the tick button to check what going to be next/main
   const handleRow = () => {
     checkRow(correctColorsObject, activeRow);
 
